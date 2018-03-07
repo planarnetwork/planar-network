@@ -1,0 +1,31 @@
+{
+  "name": "Planar Network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perryharlock/planar-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perryharlock/planar-network/issues"
+  },
+  "homepage": "https://github.com/perryharlock/planar-network#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "autoprefixer": "^7.1.2",
+    "http-server": "^0.10.0"
+  }
+}
