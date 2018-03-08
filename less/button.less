@@ -1,0 +1,30 @@
+.btn {
+    height: 55px;
+    #font > .medium;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 28px;
+    border: none;
+    background-color: @color-secondary;
+    color: @color-primary;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 20px 45px;
+
+    &:hover, &:active, &:focus {
+        color: @color-tertiary;
+        text-decoration: none;
+    }
+
+    &-key {
+        border: solid 2px @color-white;
+        background-color: transparent;
+        color: @color-secondary;
+
+        &:hover, &:active, &:focus {
+            color: @color-secondary;
+            border-color: @color-secondary;
+        }
+    }
+}

@@ -5,19 +5,43 @@ body {
     color: @color-font;
     background: @bg-color-1;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 30px;
 }
 
-h1, h2, h3, h4, h5, h6, .header {
+h1, h2, h3, h4, h5, h6 {
     font-family: @font-header;
+    line-height: 1.2;
+    color: @color-primary;
+
+    &.rev {
+        color: @color-white;
+    }
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 37px;
+}
+
+p {
+    color: @color-font;
+
+    &.rev {
+        color: @color-white;
+    }
+}
+
+.container-wide {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media @screen-tablet {
-    body {
-        font-size: 18px;
-        line-height: 34px
-    }
+
 }
 
 /* Small laptops (laptops, 992px and up) */

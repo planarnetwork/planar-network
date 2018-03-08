@@ -1,0 +1,23 @@
+.nav {
+    &-link {
+        color: @color-white;
+        #font > .medium;
+        font-size: 15px;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.3s;
+        padding: 20px;
+        display: block;
+        margin: 0 15px;
+
+        &:hover, &:focus, &:active {
+            color: @color-secondary;
+            opacity: 0.8;
+            text-decoration: none;
+        }
+    }
+
+    li:last-child {
+        margin-left: 30px;
+    }
+}
