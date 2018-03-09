@@ -1,18 +1,18 @@
 $(document).ready(function() {
 
     // Variables and Cached Selectors
-    var example         = 0,
-        $body           = $('body'),
-        $example        = $('example');
+    var $body           = $('body'),
+        $input          = $('.input-field');
 
     $body.removeClass('no-js');
 
-    // Functions
-    function example (item) {
-        
-    }
+    $input.on('focus', function() {
+        $(this).parent().addClass('input-filled');
+    });
 
-    $example.on('click', function() {
-        example(this);
+    $input.on('focusout', function() {
+        if ($(this).val().length===0) {
+            $(this).parent().removeClass('input-filled');
+        };
     });
 });

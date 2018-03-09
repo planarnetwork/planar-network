@@ -1,3 +1,56 @@
 .footer {
-    
+    color: @color-primary;
+    padding-top: 115px;
+    #font > .medium;
+
+    a {
+        font-size: 16px;
+        color: @color-primary;
+        #font > .medium;
+    }
+
+    .logo {
+        width: 292px;
+        height: 60px;
+    }
+
+    &-link-list {
+        margin-top: 20px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    &-form {
+        border-bottom: solid 1px @color-primary;
+        padding-bottom: 10px;
+    }
+
+    &-blah {
+        padding: 15px;
+        margin-top: 180px;
+        color: @color-white;
+        #font > .light;
+
+        @media @screen-tablet {
+            padding: 35px 30px;
+        }
+    }
+
+    &-launch {
+        color: @color-primary;
+        font-size: 32px;
+        #font > .medium;
+        margin-top: 12px;
+        margin-bottom: 120px;
+    }
+
+    .btn-link {
+        width: 20%;
+        display: block;
+        position: relative;
+        bottom: -9px;
+        #font > .bold;
+    }
 }
