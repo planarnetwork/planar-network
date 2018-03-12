@@ -18,7 +18,7 @@
         margin-top: 20px;
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
 
@@ -32,6 +32,18 @@
         margin-top: 180px;
         color: @color-white;
         #font > .light;
+        font-size: 14px;
+
+        a {
+            color: @color-white;
+            #font > .light;
+            font-size: 14px;
+            text-decoration: underline;
+
+            &:hover, &:active, &:focus {
+                opacity: 0.7;
+            }
+        }
 
         @media @screen-tablet {
             padding: 35px 30px;
@@ -43,14 +55,13 @@
         font-size: 32px;
         #font > .medium;
         margin-top: 12px;
-        margin-bottom: 120px;
+        margin-bottom: 110px;
     }
 
     .btn-link {
         width: 20%;
         display: block;
-        position: relative;
-        bottom: -9px;
+        line-height: 65px;
         #font > .bold;
     }
 }

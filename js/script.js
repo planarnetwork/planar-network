@@ -6,13 +6,21 @@ $(document).ready(function() {
 
     $body.removeClass('no-js');
 
+    function inputFocus (el) {
+        el.parent().addClass('input-filled');
+    }
+
+    function inputOutFocus (el) {
+        if (el.val().length===0) {
+            el.parent().removeClass('input-filled');
+        };
+    }
+
     $input.on('focus', function() {
-        $(this).parent().addClass('input-filled');
+        inputFocus($(this));
     });
 
     $input.on('focusout', function() {
-        if ($(this).val().length===0) {
-            $(this).parent().removeClass('input-filled');
-        };
+        inputOutFocus($(this));
     });
 });

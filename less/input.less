@@ -13,6 +13,7 @@
         bottom: 20px;
         pointer-events: none;
         transition: transform 0.3s;
+        z-index: 10;
     }
 
     &-field {
@@ -20,7 +21,7 @@
         display: block;
         width: 100%;
         border: none;
-        height: 70px;
+        height: 65px;
         background-color: transparent;
         border-radius: 0;
         #font > .light;
@@ -33,10 +34,11 @@
 
         &:-webkit-autofill {
             background-color: @bg-color-1;
+            box-shadow: 0 0 0px 1000px @bg-color-1 inset; /* hack to overwrite the autocomplete bg styling */
         }
     }
 
     &-filled .input-label {
-        transform: translate3d(0, -32px, 0);
+        transform: translate3d(0, -42px, 0);
     }
 }

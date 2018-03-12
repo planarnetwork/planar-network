@@ -18,10 +18,15 @@
     }
 
     &-link {
-        padding: 10px;
+        padding: 0;
+        border: solid 1px transparent;
 
         &:hover, &:active, &:focus {
             color: lighten(@color-primary, 20%);
+        }
+
+        &:focus {
+            border: dashed 1px lighten(@color-primary, 60%)
         }
     }
 
