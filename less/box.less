@@ -1,22 +1,74 @@
 .box {
-    padding: 0 25px;
+    padding: 45px 25px;
+    width: 365px;
+    overflow: visible;
 
     &-inner {
         background-color: @color-white;
+        height: 430px;
+        box-shadow: 0 3px 45px 5px fade(@color-primary, 8%);
     }
 
     &-header {
-        padding: 15px;
+        padding: 15px 30px;
+        margin: 0;
         #font > .bold;
         font-size: 34px;
         line-height: 34px;
     }
 
-    &-img {
+    &-intro {
+        width: 400px;
+        padding-top: 105px;
 
+        &-header {
+            font-size: 40px;
+            padding-right: 110px;
+            margin: 0 0 30px 0;
+            #font > .light;
+        }
+
+        &-text {
+            color: @color-primary;
+            padding-right: 50px;
+        }
+    }
+
+    &-img-container {
+        height: 175px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &-img {
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &-1 {
+            width: 117px;
+            height: 104px;
+        }
+
+        &-2 {
+            width: 317px;
+            height: 276px;
+        }
+
+        &-3 {
+            width: 187px;
+            height: 100px;
+            left: -10px;
+        }
+
+        &-4 {
+            width: 105px;
+            height: 106px;
+        }
     }
 
     &-content {
-        padding: 15px;
+        padding: 30px;
     }
 }

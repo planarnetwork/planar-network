@@ -27,6 +27,8 @@ $(document).ready(function() {
 
     $carousel.slick({
          centerMode: true,
-         slidesToShow: 3
+         slidesToShow: 3,
+         variableWidth: true,
+         initialSlide: 2
     });
 });
