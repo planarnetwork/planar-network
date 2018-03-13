@@ -6,6 +6,14 @@
 .whatis {
     padding-bottom: 80px;
 
+    p {
+        text-align: center;
+
+        @media @screen-tablet {
+            text-align: left;
+        }
+    }
+
     &-img {
         margin-top: -430px;
         position: relative;
@@ -19,4 +27,15 @@
     background-size: 1642px 830px;
     background-position: center 120px;
     background-repeat: no-repeat;
+}
+
+.features {
+
+    h2, p {
+        text-align: center;
+
+        @media @screen-tablet {
+            text-align: left;
+        }
+    }
 }

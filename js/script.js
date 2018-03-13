@@ -33,6 +33,25 @@ $(document).ready(function() {
         infinite: false,
         appendArrows: $('.slick-feature-buttons'),
         prevArrow: '<button type="button" class="slick-arrow-prev"><span class="sr-only">Prev</span></button>',
-        nextArrow: '<button type="button" class="slick-arrow-next"><span class="sr-only">Next</span></button>'
+        nextArrow: '<button type="button" class="slick-arrow-next"><span class="sr-only">Next</span></button>',
+        responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            centerMode: false,
+            initialSlide: 0,
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            centerMode: false,
+            initialSlide: 0,
+            slidesToShow: 1,
+            variableWidth: false
+          }
+        }
+      ]
     });
 });
