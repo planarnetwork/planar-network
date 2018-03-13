@@ -2,7 +2,8 @@ $(document).ready(function() {
 
     // Variables and Cached Selectors
     var $body           = $('body'),
-        $input          = $('.input-field');
+        $input          = $('.input-field'),
+        $carousel       = $('.slick');
 
     $body.removeClass('no-js');
 
@@ -22,5 +23,10 @@ $(document).ready(function() {
 
     $input.on('focusout', function() {
         inputOutFocus($(this));
+    });
+
+    $carousel.slick({
+         centerMode: true,
+         slidesToShow: 3
     });
 });
