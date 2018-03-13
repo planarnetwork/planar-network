@@ -26,9 +26,13 @@ $(document).ready(function() {
     });
 
     $carousel.slick({
-         centerMode: true,
-         slidesToShow: 3,
-         variableWidth: true,
-         initialSlide: 2
+        centerMode: true,
+        slidesToShow: 3,
+        variableWidth: true,
+        initialSlide: 1,
+        infinite: false,
+        appendArrows: $('.slick-feature-buttons'),
+        prevArrow: '<button type="button" class="slick-arrow-prev"><span class="sr-only">Prev</span></button>',
+        nextArrow: '<button type="button" class="slick-arrow-next"><span class="sr-only">Next</span></button>'
     });
 });
