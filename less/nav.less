@@ -1,14 +1,78 @@
 .nav {
+    left: -80%;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: @color-tertiary;
+    transition: all 0.3s ease;
+    padding: 20px;
+
+    @media @screen-laptop {
+        position: static;
+        height: auto;
+        background: transparent;
+        width: auto;
+        padding: 0;
+    }
+
+    &.is-open {
+        left: 0;
+    }
+
+    &-list {
+        padding-left: 0;
+        list-style: none;
+
+        @media @screen-laptop {
+            margin: 0 0 0 -5px;
+        }
+
+        > li {
+            display: block;
+            padding: 0;
+
+            @media @screen-laptop {
+                display: inline-block;
+                padding: 0;
+            }
+
+            &:last-child {
+                margin-top: 20px;
+
+                @media @screen-laptop {
+                    margin-left: 10px;
+                    margin-top: 0;
+                }
+
+                @media @screen-desktop {
+                    margin-left: 30px;
+                }
+            }
+
+            
+        }
+    }
+
     &-link {
         color: @color-white;
         #font > .medium;
         font-size: 15px;
         line-height: 1;
-        text-align: center;
         transition: all 0.3s;
-        padding: 20px;
+        padding: 20px 10px;
         display: block;
-        margin: 0 15px;
+
+        @media @screen-laptop {
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        @media @screen-desktop {
+            padding: 20px 25px;
+            margin: 0 15px;
+        }
 
         &:hover, &:focus, &:active {
             color: @color-secondary;
@@ -17,7 +81,9 @@
         }
     }
 
-    li:last-child {
-        margin-left: 30px;
+    .logo {
+        margin-left: 10px;
+        width: 216px;
+        height: 46px;
     }
 }

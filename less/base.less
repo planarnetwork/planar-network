@@ -19,11 +19,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 28px;
+
+    @media @screen-tablet {
+        font-size: 40px;
+    }
 }
 
 h2 {
-    font-size: 37px;
+    font-size: 23px;
+
+    @media @screen-tablet {
+        font-size: 37px;
+    }
 }
 
 p {
@@ -42,24 +50,4 @@ a {
 .container-wide {
     max-width: 1920px;
     margin: 0 auto;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media @screen-tablet {
-
-}
-
-/* Small laptops (laptops, 992px and up) */
-@media @screen-laptop {
-
-}
-
-/* Desktop devices (desktops, 1200px and up) */
-@media @screen-desktop {
-
-}
-
-/* Large Desktop devices (large desktops, 1480px and up) */
-@media @screen-desktop-lg {
-
 }

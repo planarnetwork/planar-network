@@ -2,20 +2,50 @@ $(document).ready(function() {
 
     // Variables and Cached Selectors
     var $body           = $('body'),
+        $window         = $(window),
         $input          = $('.input-field'),
-        $carousel       = $('.slick');
+        $carousel       = $('.slick'),
+        $nav            = $('.js-nav'),
+        $navLink        = $('.js-nav-link'),
+        laptopWidth     = 992,
+        $navToggle      = $('.js-burger');
 
     $body.removeClass('no-js');
 
-    function inputFocus (el) {
+    function inputFocus(el) {
         el.parent().addClass('input-filled');
     }
 
-    function inputOutFocus (el) {
+    function inputOutFocus(el) {
         if (el.val().length===0) {
             el.parent().removeClass('input-filled');
         };
     }
+
+    function toggleNav() {
+        $navToggle.toggleClass('is-active');
+        $nav.toggleClass('is-open');
+        $navToggle.attr('aria-expanded', function (i, attr) { return attr == 'true' ? 'false' : 'true'});
+    }
+
+    function navToggleInactive() {
+        $nav.removeClass('is-open');
+        $navToggle.removeClass('is-active');
+        $navToggle.attr('aria-expanded', 'false');
+    }
+
+    function goToByScroll(id){
+        $('html,body').animate({
+            scrollTop: $(id).offset().top
+        }, 700);
+        scrolled = true;
+    }
+
+    $window.on('resize load', function() {
+        if ($window.width() >= laptopWidth) {
+          navToggleInactive();
+        }
+    });
 
     $input.on('focus', function() {
         inputFocus($(this));
@@ -23,6 +53,19 @@ $(document).ready(function() {
 
     $input.on('focusout', function() {
         inputOutFocus($(this));
+    });
+
+    $navToggle.on('click', function() {
+        toggleNav();
+    });
+
+    $navLink.on('click', function(e) {
+        e.preventDefault();
+        var link = $(this).attr('href');
+        if ($window.width() < laptopWidth) {
+            toggleNav();
+        }
+        goToByScroll(link);
     });
 
     $carousel.slick({

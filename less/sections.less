@@ -9,7 +9,7 @@
     p {
         text-align: center;
 
-        @media @screen-tablet {
+        @media @screen-laptop {
             text-align: left;
         }
     }
@@ -30,11 +30,22 @@
 }
 
 .features {
+    @media @screen-laptop {
+        background-image: url(@line-left);
+        background-position: -110px 60%;
+        background-repeat: no-repeat;
+        background-size: 580px 824px;
+
+        &-1, &-2, &-3 {
+            padding-bottom: 45px;
+            padding-top: 35px;
+        }
+    }
 
     h2, p {
         text-align: center;
 
-        @media @screen-tablet {
+        @media @screen-laptop {
             text-align: left;
         }
     }

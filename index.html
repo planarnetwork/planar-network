@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" type="text/css"  href="css/main.css">
 </head>
-<body class="no-js">
+<body id="top" class="no-js">
     <div class="container-wide">
         <header class="header clearfix">
             <div class="container-wide">
@@ -25,19 +25,29 @@
                     <span class="sr-only">Planar Network</span>
                 </a>
 
-                <nav class="nav pull-right">
-                    <ul class="list-inline">
-                        <li>
-                            <a class="nav-link" href="#overview">Overview</a>
+                <button type="button" class="burger js-burger" aria-expanded="false" aria-label="Menu" aria-controls="Navigation">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <nav id="navigation" class="nav pull-right js-nav">
+                    <a class="logo js-nav-link visible-xs visible-sm" href="#top" title="Planar Network">
+                        <span class="sr-only">Planar Network</span>
+                    </a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link js-nav-link" href="#overview">Overview</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#whatis">What is Planar?</a>
+                        <li class="nav-item">
+                            <a class="nav-link js-nav-link" href="#whatis">What is Planar?</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#how">How it works</a>
+                        <li class="nav-item">
+                            <a class="nav-link js-nav-link" href="#how">How it works</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="#features">Features</a>
+                        <li class="nav-item">
+                            <a class="nav-link js-nav-link" href="#features">Features</a>
                         </li>
                         <li>
                             <a class="btn btn-key" href="/resources/whitepaper.pdf">Whitepaper</a>
@@ -51,16 +61,14 @@
             <section class="hero primary-bg curve">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1 col-lg-9 col-lg-offset-1">
+                        <div class="col-md-11 col-md-offset-1 col-lg-9 col-xl-8">
                             <h1 class="rev underline underline-secondary">Introducing a new era of fully connected transport ticketing</h1>
                             <p class="rev">Customers and operators alike can experience a new level of integrated travel giving lower costs, faster settlement via blockchain technology.</p>
                             <a class="btn btn-secondary margin-top" href="/resources/whitepaper.pdf">Read our whitepaper</a>
                         </div>
-                        <div class="col-md-12 col-lg-12 col-lg-offset-2">
-                            <img class="img-responsive pull-right" src="img/hero.png" alt="Hero image" />
-                        </div>
                     </div>
                 </div>
+                <img class="hero-img" src="img/hero.png" alt="Hero image" />
             </section>
 
             <section id="overview" class="overview">
@@ -98,11 +106,6 @@
                     <h2 class="center underline underline-tertiary">How does it work?</h2>
                     <div class="carousel">
                         <ul class="list-unstyled slick">
-                            <!-- <li class="slide">
-                                <div class="box">
-                                    <span class="sr-only">empty spacer</span>
-                                </div>
-                            </li> -->
                             <li class="slide">
                                 <div class="box box-intro">
                                     <h3 class="box-intro-header">See the process flow</h3>
@@ -159,37 +162,35 @@
                 </div>
             </section>
 
-            <section id="features" class="features">
-                <div class="bg-primary curve-flip">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <h2 class="rev underline underline-secondary">Integrated multi-modal transport</h2>
+            <section id="features" class="features bg-primary curve-flip">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 features-1">
+                            <h2 class="rev underline underline-secondary">Integrated multi-modal transport</h2>
 
-                                <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
+                            <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
 
-                                <p class="rev">This can be multiple modes of transport or operators across the same network. Both retailers and passengers are now in more control of travel.</p>
-                            </div>
+                            <p class="rev">This can be multiple modes of transport or operators across the same network. Both retailers and passengers are now in more control of travel.</p>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-13">
-                                <h2 class="rev underline underline-secondary">Supporting native ticket formats</h2>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-13 features-2">
+                            <h2 class="rev underline underline-secondary">Supporting native ticket formats</h2>
 
-                                <p class="rev">The ability to convert tickets stored on the blockchain into native ticket formats of the transport operators. No infrastructure changes are required, passengers travel over each operator’s network using the tickets they already accept.</p>
+                            <p class="rev">The ability to convert tickets stored on the blockchain into native ticket formats of the transport operators. No infrastructure changes are required, passengers travel over each operator’s network using the tickets they already accept.</p>
 
-                                <p class="rev">Planar's blockchain remains invisible to the customer, whilst allowing a multitude of end-user benefits. The customer can now enjoy seamless ticket integration with their devices throughout their travel.</p>
-                            </div>
+                            <p class="rev">Planar's blockchain remains invisible to the customer, whilst allowing a multitude of end-user benefits. The customer can now enjoy seamless ticket integration with their devices throughout their travel.</p>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <h2 class="rev underline underline-secondary">Faster distributed financial settlement</h2>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1 features-3">
+                            <h2 class="rev underline underline-secondary">Faster distributed financial settlement</h2>
 
-                                <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
+                            <p class="rev">For the first time, Planar now allows passengers and operators the ability to purchase travel tickets from multiple transport operators in a single transaction and store them in an on-chain, portable ticket wallet.</p>
 
-                                <p class="rev">This can be multiple modes of transport or operators across the same network. Revenue is distributed fairly and quickly, meaning a better experience for operators.</p>
-                            </div>
+                            <p class="rev">This can be multiple modes of transport or operators across the same network. Revenue is distributed fairly and quickly, meaning a better experience for operators.</p>
                         </div>
                     </div>
                 </div>
