@@ -1,20 +1,32 @@
 .nav {
-    left: -80%;
+    left: -85%;
     width: 80%;
     height: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: @color-tertiary;
-    transition: all 0.3s ease;
+    background-color: @color-primary;
+    transition: left 0.3s ease;
     padding: 20px;
+    box-shadow: -12px 0 25px 10px fade(@color-black, 80%);
+
+    @media @screen-phone {
+        left: -80;
+        width: 75%;
+    }
+
+    @media @screen-tablet {
+        padding: 40px;
+        width: 66%;
+        left: -71%;
+    }
 
     @media @screen-laptop {
         position: static;
         height: auto;
-        background: @color-primary;
         width: auto;
         padding: 0;
+        box-shadow: none;
     }
 
     &.is-open {

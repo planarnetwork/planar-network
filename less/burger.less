@@ -4,12 +4,14 @@
     cursor: pointer;
     right: 15px;
     top: 13px;
+    width: 50px;
+    height: 50px;
     border: none;
     background-color: @color-primary;
-    border-radius: 0;
+    border-radius: 50%;
     margin: 0;
     overflow: visible;
-    padding: 15px;
+    padding: 10px;
     line-height: 1;
     z-index: 20;
     transition-timing-function: linear;
@@ -26,25 +28,21 @@
         visibility: hidden;
     }
 
-    &:hover {
-        opacity: 0.7;
-    }
-
     &:active, &:focus {
         outline: 0;
-        opacity: 1;
     }
 
     &-box {
         position: relative;
         display: inline-block;
-        width: 35px;
-        height: 21px;
+        width: 30px;
+        height: 22px;
+        top: 2px;
     }
 
     &-inner, &-inner:after, &-inner:before {
         position: absolute;
-        width: 35px;
+        width: 30px;
         height: 3px;
         transition-timing-function: ease;
         transition-duration: .15s;
