@@ -9,7 +9,11 @@
         opacity: 0.8;
     }
 
-    &-rev {
-        background-image: url(@logo-rev);
+    &-footer {
+        background-image: url(@logo-rev-mini);
+
+        @media @screen-tablet {
+            background-image: url(@logo-rev);
+        }
     }
 }
