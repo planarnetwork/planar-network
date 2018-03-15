@@ -21,11 +21,15 @@
     &:after {
         content: "";
         display: block;
-        margin-top: 38px;
+        margin-top: 20px;
         width: 45px;
         height: 3px;
         background-color: @color-primary;
         .center-block();
+
+        @media @screen-tablet {
+            margin-top: 38px;
+        }
 
         @media @screen-laptop {
             margin-left: 0;

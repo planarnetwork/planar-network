@@ -1,10 +1,24 @@
 .overview {
-    padding-top: 80px;
-    padding-bottom: 320px;
+    padding-top: 20px;
+    padding-bottom: 140px;
+
+    @media @screen-tablet {
+        padding-top: 40px;
+        padding-bottom: 270px;
+    }
+
+    @media @screen-laptop {
+        padding-top: 80px;
+        padding-bottom: 320px;
+    }
 }
 
 .whatis {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
+
+        @media @screen-tablet {
+            padding-bottom: 80px;
+        }
 
     p {
         text-align: center;
@@ -15,21 +29,39 @@
     }
 
     &-img {
-        margin-top: -430px;
+        margin-top: -320px;
         position: relative;
         margin-bottom: 50px;
+        width: 75%;
+
+        @media @screen-tablet {
+            margin-top: -430px;
+            width: 100%;
+        }
     }
 }
 
 .how {
-    padding: 60px 0 120px 0;
+    padding: 40px 0 50px 0;
     background-image: url(@how-bg);
     background-size: 1642px 830px;
     background-position: center 120px;
     background-repeat: no-repeat;
+
+        @media @screen-tablet {
+            padding: 60px 0 120px 0;
+        }
 }
 
 .features {
+    &-1 {
+        margin-top: -120px;
+
+        @media @screen-tablet {
+            margin-top: 0;
+        }
+    }
+
     @media @screen-laptop {
         background-image: url(@line-left);
         background-position: -110px 60%;

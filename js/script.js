@@ -41,6 +41,38 @@ $(document).ready(function() {
         scrolled = true;
     }
 
+    function runSlick(){
+        $carousel.slick({
+            centerMode: true,
+            slidesToShow: 3,
+            variableWidth: true,
+            initialSlide: 1,
+            infinite: false,
+            appendArrows: $('.slick-feature-buttons'),
+            prevArrow: '<button type="button" class="slick-arrow-prev"><span class="sr-only">Prev</span></button>',
+            nextArrow: '<button type="button" class="slick-arrow-next"><span class="sr-only">Next</span></button>',
+            responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                centerMode: false,
+                initialSlide: 0,
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: false,
+                initialSlide: 1,
+                slidesToShow: 1,
+                variableWidth: false
+              }
+            }
+          ]
+        });
+    }
+
     $window.on('resize load', function() {
         if ($window.width() >= laptopWidth) {
           navToggleInactive();
@@ -68,33 +100,5 @@ $(document).ready(function() {
         goToByScroll(link);
     });
 
-    $carousel.slick({
-        centerMode: true,
-        slidesToShow: 3,
-        variableWidth: true,
-        initialSlide: 1,
-        infinite: false,
-        appendArrows: $('.slick-feature-buttons'),
-        prevArrow: '<button type="button" class="slick-arrow-prev"><span class="sr-only">Prev</span></button>',
-        nextArrow: '<button type="button" class="slick-arrow-next"><span class="sr-only">Next</span></button>',
-        responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            centerMode: false,
-            initialSlide: 0,
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            centerMode: false,
-            initialSlide: 0,
-            slidesToShow: 1,
-            variableWidth: false
-          }
-        }
-      ]
-    });
+    runSlick();
 });
