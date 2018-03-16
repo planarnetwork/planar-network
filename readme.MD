@@ -1,4 +1,4 @@
-# template
+# Planar Network Landing Page
 
 The npm install will install grunt, autoprefixer, uglify, http-server..and much much more!  
 
@@ -22,4 +22,4 @@ NOTE
 - Minimal version bootstrap with grid, utilities, responsive utilities and scaffolding
 - Using 24 column bootstrap grid
 - Larger screen breakpoint added to bootstrap grid at 1310px
-- All Less/CSS is automatically prefixed on compilation
+- All Less/CSS is automatically prefixed and minimised on compilation

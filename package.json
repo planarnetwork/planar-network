@@ -1,21 +1,21 @@
 {
-  "name": "Planar Network",
+  "name": "planarnetwork",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page for Planar Network",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perryharlock/planar-network.git"
+    "url": "git+https://github.com/planarnetwork/planar-network.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/perryharlock/planar-network/issues"
+    "url": "https://github.com/planarnetwork/planar-network/issues"
   },
-  "homepage": "https://github.com/perryharlock/planar-network#readme",
+  "homepage": "https://github.com/planarnetwork/planar-network#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",
