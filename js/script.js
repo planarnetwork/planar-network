@@ -8,9 +8,11 @@ $(document).ready(function() {
         $nav            = $('.js-nav'),
         $navLink        = $('.js-nav-link'),
         laptopWidth     = 992,
-        $navToggle      = $('.js-burger');
+        $navToggle      = $('.js-burger'),
+        $form           = $('#signup');
 
     $body.removeClass('no-js');
+    $input.val('');
 
     function inputFocus(el) {
         el.parent().addClass('input-filled');
@@ -20,6 +22,10 @@ $(document).ready(function() {
         if (el.val().length===0) {
             el.parent().removeClass('input-filled');
         };
+    }
+    
+    function closeForm() {
+      $form.html('<span class="input-label">Thank you</span>');
     }
 
     function toggleNav() {
@@ -34,14 +40,14 @@ $(document).ready(function() {
         $navToggle.attr('aria-expanded', 'false');
     }
 
-    function goToByScroll(id){
+    function goToByScroll(id) {
         $('html,body').animate({
             scrollTop: $(id).offset().top
         }, 700);
         scrolled = true;
     }
 
-    function runSlick(){
+    function runSlick() {
         $carousel.slick({
             centerMode: true,
             slidesToShow: 3,
@@ -99,6 +105,14 @@ $(document).ready(function() {
         }
         goToByScroll(link);
     });
+
+    $form.on('submit', function(e) {
+      e.preventDefault();
+      
+      $.post($form.attr('action'), { data: $input.val() })
+       .then(closeForm)
+       .catch(function(err) { console.log(err); closeForm() });
+    })
 
     runSlick();
 });
