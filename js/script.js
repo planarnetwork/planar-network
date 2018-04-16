@@ -108,10 +108,14 @@ $(document).ready(function() {
 
     $form.on('submit', function(e) {
       e.preventDefault();
-      
-      $.post($form.attr('action'), { data: $input.val() })
-       .then(closeForm)
-       .catch(function(err) { console.log(err); closeForm() });
+      $.ajax({
+        type: "POST",
+        url: $form.attr('action'),
+        data: JSON.stringify({ data: $input.val() }),
+        success: closeForm,
+        error: closeForm,
+        dataType: 'application/json'
+      });
     })
 
     runSlick();
