@@ -75,6 +75,23 @@
         padding-bottom: 10px;
         margin-top: 25px;
 
+        &-response {
+            border-bottom: none;
+        }
+
+        &-thanks {
+            text-align: center;
+            color: @color-primary;
+            font-size: 26px;
+            line-height: 26px;
+            padding-top: 12px;
+            margin-bottom: 2px;
+
+            @media @screen-tablet {
+                text-align: left;
+            }
+        }
+
         @media @screen-laptop {
             margin-top: 0;
         }
@@ -82,7 +99,7 @@
         &-container {
             @media @screen-smalltablet-max {
                 background-color: @color-white;
-                margin: 20px -15px 0 -15px;
+                margin: 0 -15px 0 -15px;
                 padding: 5px 25px 40px 25px;
             }
         }
@@ -118,7 +135,7 @@
     .btn-link {
         width: 20%;
         display: block;
-        line-height: 65px;
+        line-height: 63px;
         #font > .bold;
     }
 }

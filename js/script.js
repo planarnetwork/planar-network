@@ -23,9 +23,14 @@ $(document).ready(function() {
             el.parent().removeClass('input-filled');
         };
     }
+
+    function addLoader() {
+        $form.addClass('footer-form-response');
+        $form.html('<span class="loader"></span>');
+    }
     
     function closeForm() {
-      $form.html('<span class="input-label">Thank you</span>');
+        $form.html('<p class="footer-form-thanks">Thank you for registering.</p>');
     }
 
     function toggleNav() {
@@ -108,6 +113,7 @@ $(document).ready(function() {
 
     $form.on('submit', function(e) {
       e.preventDefault();
+      addLoader();
       $.ajax({
         type: "POST",
         url: $form.attr('action'),
