@@ -1,0 +1,14 @@
+
+title: Planar Network
+email: info@planar.network
+description: >-
+  Public transit technology, blockchain travel tickets.
+baseurl: ""
+url: "https://planar.network/"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+- README.md
+- vendor/
+permalink: /posts/:title/

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{site.lang}}">
+<head>
+    <meta charset="utf-8"/>
+    <title>{{page.title}}</title>
+    <meta name="description" content="{{page.description}}"/>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        {{content}}
+
+        <hr/>
+        <small>
+            Copyright &copy; {{site.time | date: '%Y'}}, {{site.title}}.
+        </small>
+    </div>
+</main>
+</body>
+
+</html>
