@@ -76,9 +76,18 @@
         padding: 20px 10px;
         display: block;
 
+        &.is-active {
+            border-left: solid 2px @color-white;
+        }
+
         @media @screen-laptop {
             text-align: center;
             margin: 0 5px;
+
+            &.is-active {
+                border-left: none;
+                border-bottom: solid 2px @color-white;
+            }
         }
 
         @media @screen-desktop {
