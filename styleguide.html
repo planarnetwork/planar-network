@@ -19,29 +19,35 @@
 </head>
 <body class="no-js">
     <header class="header clearfix">
-        <a class="logo" href="/" title="Planar Network">
-            <span class="sr-only">Planar Network</span>
-        </a>
+        <div class="container-wide">
+            <a class="logo" href="/" title="Planar Network">
+                <span class="sr-only">Planar Network</span>
+            </a>
 
-        <nav class="nav pull-right">
-            <ul class="list-inline">
-                <li>
-                    <a href="#overview">Overview</a>
-                </li>
-                <li>
-                    <a href="#what">What is Planar?</a>
-                </li>
-                <li>
-                    <a href="#how">How it works</a>
-                </li>
-                <li>
-                    <a href="#features">Features</a>
-                </li>
-                <li>
-                    <a href="/resources/whitepaper.pdf">Whitepaper</a>
-                </li>
-            </ul>
-        </nav>
+            <button type="button" class="burger js-burger" aria-expanded="false" aria-label="Menu" aria-controls="Navigation">
+                <span class="sr-only">Menu</span>
+                <span class="burger-box">
+                    <span class="burger-inner"></span>
+                </span>
+            </button>
+
+            <nav id="navigation" class="nav pull-right js-nav">
+                <a class="logo js-nav-link visible-xs visible-sm" href="#top" title="Planar Network">
+                    <span class="sr-only">Planar Network</span>
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-key" href="/resources/whitepaper.pdf" target="blank">Whitepaper</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -52,17 +58,10 @@
                         <h1 class="rev">Styleguide</h1>
                         <p class="rev">This page shows the components, styles and color palette for Planar Network.</p>
                     </div>
-                    <div class="col-sm-13">
-                        <img class="img-responsive" src="/img/hero-image.svg" alt="Hero image" />
-                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        
-    </footer>
 
     <script src="js-min/script.js" defer></script>
 </body>
