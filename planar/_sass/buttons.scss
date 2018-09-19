@@ -1,0 +1,71 @@
+.btn {
+    @include get-font(Medium);
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    color: $color-primary;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 10px;
+
+    &:hover, &:active, &:focus {
+        color: $color-white;
+        text-decoration: none;
+        outline: none;
+    }
+
+    &-link {
+        padding: 0;
+        border: solid 1px transparent;
+
+        &:hover, &:active, &:focus {
+            color: lighten($color-primary, 20%);
+        }
+
+        &:focus {
+            border: dashed 1px lighten($color-primary, 60%)
+        }
+    }
+
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 20px 45px;
+        border-radius: 28px;
+        height: 55px;
+
+        &:hover, &:active, &:focus {
+            color: $color-white;
+            background-color: $color-tertiary;
+        }
+    }
+
+    &-secondary {
+        background-color: $color-secondary;
+        color: $color-primary;
+        padding: 20px 45px;
+        border-radius: 28px;
+        height: 55px;
+
+        &:hover, &:active, &:focus {
+            color: $color-tertiary;
+        }
+    }
+
+    &-key {
+        border: solid 2px $color-white;
+        background-color: transparent;
+        color: $color-secondary;
+        padding: 20px 45px;
+        border-radius: 28px;
+        height: 55px;
+
+        &:hover, &:active, &:focus {
+            color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+}

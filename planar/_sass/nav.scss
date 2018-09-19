@@ -1,0 +1,110 @@
+.nav {
+    left: -85%;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: $color-primary;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: -12px 0 25px 10px rgba($color-black, 0.8);
+
+    @media ($screen-phone) {
+        left: -80%;
+        width: 75%;
+    }
+
+    @media ($screen-tablet) {
+        padding: 40px;
+        width: 66%;
+        left: -71%;
+    }
+
+    @media ($screen-laptop) {
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    &.is-open {
+        left: 0;
+    }
+
+    &-list {
+        padding-left: 0;
+        list-style: none;
+
+        @media ($screen-laptop) {
+            margin: 0 0 0 -5px;
+        }
+
+        > li {
+            display: block;
+            padding: 0;
+
+            @media ($screen-laptop) {
+                display: inline-block;
+                padding: 0;
+            }
+
+            &:last-child {
+                margin-top: 20px;
+
+                @media ($screen-laptop) {
+                    margin-left: 10px;
+                    margin-top: 0;
+                }
+
+                @media ($screen-desktop) {
+                    margin-left: 30px;
+                }
+            }
+
+            
+        }
+    }
+
+    &-link {
+        color: $color-white;
+        @include get-font(Medium);
+        font-size: 15px;
+        line-height: 1;
+        transition: all 0.3s;
+        padding: 20px 10px;
+        display: block;
+
+        &.is-active {
+            border-left: solid 2px $color-white;
+        }
+
+        @media ($screen-laptop) {
+            text-align: center;
+            margin: 0 5px;
+
+            &.is-active {
+                border-left: none;
+                border-bottom: solid 2px $color-white;
+            }
+        }
+
+        @media ($screen-desktop) {
+            padding: 20px 25px;
+            margin: 0 15px;
+        }
+
+        &:hover, &:focus, &:active {
+            color: $color-secondary;
+            opacity: 0.8;
+            text-decoration: none;
+        }
+    }
+
+    .logo {
+        margin-left: 10px;
+        width: 216px;
+        height: 46px;
+    }
+}

@@ -1,0 +1,44 @@
+.input {
+    position: relative;
+    z-index: 1;
+    display: block;
+    vertical-align: top;
+    width: 80%;
+    transition: all 0.3s;
+
+    &-label {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        bottom: 17px;
+        pointer-events: none;
+        transition: transform 0.3s;
+        z-index: 10;
+    }
+
+    &-field {
+        position: relative;
+        display: block;
+        width: 100%;
+        border: none;
+        height: 65px;
+        background-color: transparent;
+        border-radius: 0;
+        @inlude get-font(Light);
+        -webkit-appearance: none; /* for box shadows to show on iOS */
+
+        &:focus, &:active {
+            outline: none;
+            background-color: transparent;
+        }
+
+        &:-webkit-autofill {
+            background-color: $bg-color-1;
+            box-shadow: 0 0 0px 1000px $bg-color-1 inset; /* hack to overwrite the autocomplete bg styling */
+        }
+    }
+
+    &-filled .input-label {
+        transform: translate3d(0, -42px, 0);
+    }
+}

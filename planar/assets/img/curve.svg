@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2918px" height="399px" viewBox="0 0 2918 399" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="2919" height="399"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-1.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Path"></g>
+            <path d="M-2,0 L2919.6775,0 L2919.6775,399 L-2,399 L-2,0 Z M-0.5,-3182 C2561.82,-3182 4639,-2380.366 4639,-1391.5 C4639,-402.634 2561.82,399 -0.5,399 C-2562.82,399 -4640,-402.63 -4640,-1391.5 C-4640,-2380.37 -2562.82,-3182 -0.5,-3182 Z" id="Curve_Overlay" fill="#F3F3F3" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,111 @@
+.box {
+    padding: 25px 25px 40px 25px;
+    width: 100%;
+    overflow: visible;
+
+    @media ($screen-tablet) {
+        width: 365px;
+        padding: 45px 25px;
+    }
+
+    &-inner {
+        background-color: $color-white;
+        height: 400px;
+        box-shadow: 0 3px 25px 5px rgba($color-primary, 0.08);
+
+        @media ($screen-tablet) {
+            height: 430px;
+            box-shadow: 0 3px 45px 5px rgba($color-primary, 0.08);
+        }
+    }
+
+    &-header {
+        padding: 15px 30px;
+        margin: 0;
+        @include get-font(Bold);
+        font-size: 28px;
+        line-height: 28px;
+
+        @media ($screen-tablet) {
+            font-size: 34px;
+            line-height: 34px;
+        }
+    }
+
+    &-intro {
+        padding-top: 110px;
+        text-align: center;
+
+        @media ($screen-tablet) {
+            width: 400px;
+            text-align: left;
+        }
+
+        &-header {
+            font-size: 28px;
+            margin: 0 0 30px 0;
+            @include get-font(Light);
+
+            @media ($screen-tablet) {
+                padding-right: 50px;
+                font-size: 40px;
+                padding-right: 110px;
+            }
+        }
+
+        &-text {
+            color: $color-primary;
+
+            @media ($screen-tablet) {
+                padding-right: 50px;
+            }
+        }
+    }
+
+    &-img-container {
+        height: 155px;
+        text-align: center;
+        overflow: hidden;
+
+        @media ($screen-tablet) {
+            height: 175px;
+        }
+    }
+
+    &-img {
+        margin: 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &-1 {
+            width: 117px;
+            height: 104px;
+        }
+
+        &-2 {
+            width: 317px;
+            height: 276px;
+        }
+
+        &-3 {
+            width: 187px;
+            height: 100px;
+            left: -10px;
+        }
+
+        &-4 {
+            width: 105px;
+            height: 106px;
+        }
+    }
+
+    &-content {
+        padding: 30px;
+        text-align: center;
+
+        @media ($screen-tablet) {
+            text-align: left;
+        }
+    }
+}

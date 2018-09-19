@@ -1,0 +1,77 @@
+.hero {
+    text-align: center;
+    background: $color-primary url($grid) no-repeat right top;
+    position: relative;
+    overflow: hidden;
+
+    @media ($screen-laptop) {
+        text-align: left;
+        padding-top: 115px;
+    }
+
+    &.curve:after {
+        position: relative;
+        z-index: 10;
+
+        @media ($screen-laptop) {
+            margin-top: -50px;
+        }
+
+        @media ($screen-desktop) {
+            margin-top: 60px;
+        }
+    }
+
+    &-img {
+        width: 100%;
+        margin-bottom: -200px;
+        padding-top: 80px;
+        position: relative;
+        left: 12%;
+
+        @media ($screen-laptop) {
+            width: 700px;
+            height: 511px;
+            position: absolute;
+            left: auto;
+            left: 51%;
+            top: 13%;
+            z-index: 5;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media ($screen-desktop) {
+            width: 994px;
+            height: 726px;
+            top: 5%;
+            left: 44%;
+        }
+
+        @media ($screen-desktop-lg) {
+            left: 52%;
+        }
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    &-sub {
+        padding: 20px 0 40px 0;
+
+        @media ($screen-laptop) {
+            padding: 80px 0 100px 0;
+        }
+
+        &.curve {
+            background-position: right 0px top -240px;
+
+            &:after {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+}

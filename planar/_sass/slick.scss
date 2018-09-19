@@ -1,0 +1,135 @@
+/* Slider */
+.slick {
+    &-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-touch-callout: none;
+        user-select: none;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    &-list {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+
+        &.dragging {
+            cursor: pointer;
+            cursor: hand;
+        }
+    }
+
+    &-slider .slick-track,
+    &-slider .slick-list {
+        transform: translate3d(0, 0, 0);
+    }
+
+    &-track {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+        }
+
+        &:after {
+            clear: both;
+        }
+
+        .slick-loading & {
+            visibility: hidden;
+        }
+    }
+
+    &-slide {
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        [dir="rtl"] & {
+            float: right;
+        }
+        img {
+            display: block;
+        }
+        &.slick-loading img {
+            display: none;
+        }
+
+        display: none;
+
+        &.dragging img {
+            pointer-events: none;
+        }
+
+        .slick-initialized & {
+            display: block;
+        }
+
+        .slick-loading & {
+            visibility: hidden;
+        }
+
+        .slick-vertical & {
+            display: block;
+            height: auto;
+            border: 1px solid transparent;
+        }
+    }
+
+    &-arrow.slick-hidden {
+        display: none;
+    }
+
+    &-feature-buttons {
+        text-align: center;
+
+        @media ($screen-desktop) {
+            margin-top: 40px;
+        }
+    }
+
+    &-arrow {
+        border-radius: 50%;
+        background-color: $color-white;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        border: none;
+        background: $color-white url($arrow) no-repeat 17px center;
+        outline: none;
+        transition: all 0.4s;
+
+        &:hover {
+            background: $color-primary url($arrow-rev) no-repeat 15px center;
+        }
+
+        &-next {
+            margin-left: 40px;
+            transform: rotate(180deg);
+        }
+
+        &-prev {
+            margin-right: 40px;
+        }
+
+        &.slick-disabled {
+            opacity: 0.5;
+            background: $color-white url($arrow) no-repeat 17px center;
+            cursor: default;
+        }
+    }
+}
