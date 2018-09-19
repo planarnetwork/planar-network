@@ -1,18 +1,26 @@
 <section>
-    <div class="row">
-        <div class="col-md-12 offset-md-6">
-            {% for post in site.posts %}
-                <article>
-                    <h2>
-                        <a href="{{post.url}}">{{post.title}}</a>
-                    </h2>
-                    <time itemprop="dateCreated" datetime="{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}">
-                        {{ post.date | date: '%d %B %Y' }}
-                    </time>
-
-                    <p>{{post.description}}</p>
-                </article>
-            {% endfor %}
-        </div>
+  <div class="row">
+    <div class="col-md-12 offset-md-6">
+      <ul class="blog-list list-unstyled">
+        {% for post in site.posts %}
+          <li class="blog-list__item underline">
+            <article class="article" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <header>
+                <h2 class="blog-list__title">
+                  <a class="blog-list__url" href="{{post.url}}">{{post.title}}</a>
+                </h2>
+              </header>
+              <time class="blog-list__time" itemprop="dateCreated" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                {{ post.date | date: '%d %B %Y' }}
+              </time>
+              <div class="blog-list__short" itemprop="description">
+                {{ post.excerpt }}
+              </div>
+              <a class="btn btn-primary" href="{{post.url}}">View post</a>
+            </article>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </section>

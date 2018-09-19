@@ -12,3 +12,4 @@ exclude:
 - README.md
 - vendor/
 permalink: /posts/:title
+excerpt_separator: <!--more-->
