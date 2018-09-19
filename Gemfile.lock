@@ -47,6 +47,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     kramdown (1.17.0)
     liquid (4.0.0)
     listen (3.1.5)
@@ -83,6 +85,7 @@ DEPENDENCIES
   jekyll-autoprefixer
   jekyll-feed (~> 0.6)
   jekyll-minifier (~> 0.1.6)
+  jekyll-youtube
   minima (~> 2.0)
   tzinfo-data
 

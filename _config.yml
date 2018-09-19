@@ -10,6 +10,7 @@ plugins:
   - jekyll-feed
   - jekyll-autoprefixer
   - jekyll-minifier
+  - jekyll-youtube
 exclude:
 - README.md
 - vendor/
