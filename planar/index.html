@@ -1,58 +1,15 @@
 ---
 title: Planar Network
-description: Blockchains and stuff
-layout: page
+description: An open marketplace for multi-modal journeys across any number of transport operators. Lower fees, faster settlement and a better retail experience.
+layout: default
+fullfooter: true
 ---
 
 <div class="container-wide">
-    <header class="header clearfix">
-        <div class="container-wide">
-            <a class="logo" href="/" title="Planar Network">
-                <span class="sr-only">Planar Network</span>
-            </a>
-
-            <button type="button" class="burger js-burger" aria-expanded="false" aria-label="Menu" aria-controls="Navigation">
-                <span class="sr-only">Menu</span>
-                <span class="burger-box">
-                    <span class="burger-inner"></span>
-                </span>
-            </button>
-
-            <nav id="navigation" class="nav float-right js-nav">
-                <a class="logo js-nav-link d-lg-none" href="#top" title="Planar Network">
-                    <span class="sr-only">Planar Network</span>
-                </a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link is-active" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-key" href="/resources/whitepaper.pdf" target="blank">Whitepaper</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    {% include header.html %}
 
     <main>
-        <section class="hero curve">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-11 offset-lg-1 col-xl-9 col-xxl-8">
-                        <h1 class="rev underline underline-secondary">Introducing a new era of fully connected transport ticketing</h1>
-                        <p class="rev">An open marketplace for multi-modal journeys across any number of transport operators. Lower fees, faster settlement and a better retail experience.</p>
-                        <a class="btn btn-secondary margin-top" href="/resources/whitepaper.pdf" target="blank">Read our whitepaper</a>
-                    </div>
-                </div>
-            </div>
-            <img class="hero-img" src="assets/img/hero.png" alt="Hero image" />
-        </section>
+        {% include hero.html %}
 
         <section id="overview" class="overview">
             <div class="container">

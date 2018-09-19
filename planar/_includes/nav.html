@@ -1,0 +1,24 @@
+<button type="button" class="burger js-burger" aria-expanded="false" aria-label="Menu" aria-controls="Navigation">
+    <span class="sr-only">Menu</span>
+    <span class="burger-box">
+        <span class="burger-inner"></span>
+    </span>
+</button>
+
+<nav id="navigation" class="nav float-right js-nav">
+    <a class="logo js-nav-link d-lg-none" href="#top" title="Planar Network">
+        <span class="sr-only">Planar Network</span>
+    </a>
+    <ul class="nav-list">
+        {% for item in site.data.nav %}
+            <li class="nav-item">
+                <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %}is-active{% endif %}">
+                  {{ item.name }}
+                </a>
+            </li>
+        {% endfor %}
+        <li>
+            <a class="btn btn-key" href="../assets/docs/whitepaper.pdf" target="blank">Whitepaper</a>
+        </li>
+    </ul>
+</nav>
