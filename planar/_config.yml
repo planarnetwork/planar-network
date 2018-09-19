@@ -17,4 +17,5 @@ excerpt_separator: <!--more-->
 autoprefixer:
   browsers:
   - last 2 versions
-
+sass:
+  style: compressed
