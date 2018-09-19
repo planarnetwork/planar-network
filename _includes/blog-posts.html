@@ -5,7 +5,7 @@
         <ul class="blog-list list-unstyled">
           {% for post in site.posts %}
             <li class="blog-list__item underline">
-              <article itemscope="itemscope" itemtype="http://schema.org/Article">
+              <article class="article" itemscope="itemscope" itemtype="http://schema.org/Article">
                 <header>
                   <h2 class="blog-list__title">
                     <a class="blog-list__url" href="{{post.url}}">{{post.title}}</a>
@@ -15,7 +15,7 @@
                   {{ post.date | date: '%d %B %Y' }}
                 </time>
                 <div class="blog-list__short" itemprop="description">
-                  {{ post.excerpt }}
+                  {{ post.description }}
                 </div>
                 <a class="btn btn-primary" href="{{post.url}}">View post</a>
               </article>
