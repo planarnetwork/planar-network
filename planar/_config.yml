@@ -8,8 +8,13 @@ url: "https://planar.network/"
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
 exclude:
 - README.md
 - vendor/
 permalink: /posts/:title
 excerpt_separator: <!--more-->
+autoprefixer:
+  browsers:
+  - last 2 versions
+
