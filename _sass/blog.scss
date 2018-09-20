@@ -32,24 +32,24 @@
         }
 
         &__title {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         &__time {
             font-style: italic;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             display: block;
 
             @media ($screen-tablet) {
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
         }
 
         &__short {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
 
             @media ($screen-tablet) {
-                margin-bottom: 40px;
+                margin-bottom: 25px;
             }
         }
 
@@ -60,6 +60,11 @@
                 color: $color-tertiary;
                 text-decoration: none;
             }
+        }
+
+        &__image {
+            width: 75%;
+            margin: 0 auto;
         }
     }
 }
