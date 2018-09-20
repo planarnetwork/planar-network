@@ -37,7 +37,7 @@ The website executes the contract using the web3 client library to send the sele
 
 The contract verifies the signature provided by the retailer API to ensure that the retailer offered this ticket at the given price. Assuming the verification was a success, a ticket is created and assigned to the user. The funds are transferred from the user to the retailer instantly and atomically, so there can be no tickets created without paying the retailer.
 
-![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png){: .img-responsive }
+![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png){: .img-responsive .blog-image }
 
 ### 3) Ticket creation
 
@@ -45,7 +45,7 @@ Although the ticket has been created and stored on the blockchain, real world ra
 
 All tickets purchased get put into the fulfilment queue of the retailer that signed them. The retailer API polls this queue and updates the ticket with the collection reference after it has been fulfilled.
 
-![creation](/assets/img/a-step-towards-decentralized-travel-tickets/3.png){: .img-responsive }
+![creation](/assets/img/a-step-towards-decentralized-travel-tickets/3.png){: .img-responsive .blog-image }
 
 The fulfilment information is a string so it is possible to provide other methods of fulfilment.
 
@@ -53,7 +53,7 @@ The fulfilment information is a string so it is possible to provide other method
 
 The user can then query the contract for their collection reference through the website or another third party app.
 
-![storage](/assets/img/a-step-towards-decentralized-travel-tickets/4.png){: .img-responsive }
+![storage](/assets/img/a-step-towards-decentralized-travel-tickets/4.png){: .img-responsive .blog-image }
 
 The website and retailer API are specific to [traintickets.to](https://traintickets.to/), but the contract is not. Other retailers can integrate their own website and API to sell tickets using the contract, allowing customers to purchase tickets from multiple websites and have all their tickets in a single wallet.
 
