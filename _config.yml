@@ -5,6 +5,7 @@ description: >-
   Public transit technology, blockchain travel tickets.
 baseurl: ""
 url: "https://planar.network/"
+lang: "en"
 markdown: kramdown
 plugins:
   - jekyll-feed
