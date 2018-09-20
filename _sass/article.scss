@@ -73,9 +73,16 @@
     &-headline {
         font-size: 20px;
         @include get-font(Medium);
-        line-height: 37px;
+        line-height: 34px;
         border-left: solid 4px $color-font;
-        padding-left: 30px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+
+        @media ($screen-tablet) {
+            font-size: 22px;
+            line-height: 37px;
+            padding-left: 30px;
+        }
     }
 
     &-back {
