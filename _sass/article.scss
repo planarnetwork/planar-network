@@ -53,11 +53,7 @@
         }
 
         &__image {
-            width: 75%;
-            margin: 0 auto;
-
             @media ($screen-tablet) {
-                width: 100%;
                 margin-top: 10px;
             }
         }
