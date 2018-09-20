@@ -64,7 +64,7 @@ The code for the [contract](https://www.github.com/planarnetwork/ticket-wallet/)
 Traintickets.to has achieved decentralization of retailing and storage. The retailer API currently relies on a downstream API to query fares and create tickets.
 
 ![e-tickets](/assets/img/a-step-towards-decentralized-travel-tickets/e-ticket.png){: .img-responsive .center-block }
-*UK rail e-ticket*{: .center}
+*UK rail e-ticket*{: .center .center-block}
 
 Decentralizing the fares query process is challenging because of the sheer amount of data. In the UK alone there are over 100 million rail fares when you account for all the stations, ticket types and railcard discounts. It's possible that blockchain [performance improvements](https://medium.com/coinmonks/scaling-solutions-on-ethereum-explained-d970b66e28e5) or [fare simplifications](https://www.bbc.co.uk/news/uk-44032015) will make this more feasible, but both look some way off.
 
