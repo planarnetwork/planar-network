@@ -25,32 +25,17 @@
     .logo {
         width: 58px;
         height: 67px;
-        margin: 0 auto 15px auto;
+        margin: 0 auto;
         display: block;
 
         @media ($screen-tablet) {
-            margin: 0;
+            margin-bottom: 35px;
             width: 292px;
-            height: 60px;
-        }
-    }
-
-    &-launch {
-        color: $color-primary;
-        font-size: 27px;
-        @include get-font(Medium);
-        margin-bottom: 0;
-        text-align: center;
-
-        @media ($screen-tablet) {
-            font-size: 32px;
-            text-align: left;
-            margin-bottom: 80px;
-            margin-top: 12px;
+            height: 80px;
         }
 
         @media ($screen-laptop) {
-            margin-bottom: 110px;
+            margin-bottom: 80px;
         }
     }
 
@@ -116,7 +101,7 @@
 
         @media ($screen-laptop) {
             padding-top: 115px;
-            margin-bottom: 180px;
+            margin-bottom: 170px;
         }
     }
 
