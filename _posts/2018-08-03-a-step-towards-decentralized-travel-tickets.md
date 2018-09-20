@@ -27,7 +27,7 @@ The decentralized nature of the blockchain means that any UK rail retailer can s
 
 Selling a travel ticket is a four step process: querying, retailing, creation (fulfilment) and storage. In order to complete these steps traintickets.to uses three components: an Ethereum smart contract, a website and a retailer API.
 
-##### 1) Querying
+### 1) Querying
 
 The website sends a request to the retailer API for journey and fare information. The retailer API finds relevant results and signs them using the private key of its Ethereum account.
 
@@ -37,7 +37,7 @@ The website sends a request to the retailer API for journey and fare information
 
 The results are displayed on the website. After selecting a result, the user purchases a ticket by executing the contract through the website.
 
-##### 2) Retailing
+### 2) Retailing
 
 The website executes the contract using the web3 client library to send the selected result, signature and necessary funds to the contract.
 
@@ -47,7 +47,7 @@ The contract verifies the signature provided by the retailer API to ensure that 
 ![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png)
 </div>
 
-##### 3) Ticket creation
+### 3) Ticket creation
 
 Although the ticket has been created and stored on the blockchain, real world rail systems do not query the blockchain (yet), so the retailer needs to fulfil the ticket.
 
@@ -59,7 +59,7 @@ All tickets purchased get put into the fulfilment queue of the retailer that sig
 
 The fulfilment information is a string so it is possible to provide other methods of fulfilment.
 
-##### 4) Storage
+### 4) Storage
 
 The user can then query the contract for their collection reference through the website or another third party app.
 
