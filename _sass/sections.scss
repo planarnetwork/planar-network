@@ -162,8 +162,17 @@
     }  
 }
 
-.blog-back {
-    margin-top: 60px;
-    padding-top: 60px;
-    border-top: solid 2px $color-tertiary;
+.blog {
+    &-image {
+        @media ($screen-tablet) {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+
+    &-back {
+        margin-top: 60px;
+        padding-top: 60px;
+        border-top: solid 2px $color-tertiary;
+    }
 }

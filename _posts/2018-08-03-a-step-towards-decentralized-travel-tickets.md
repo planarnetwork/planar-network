@@ -27,7 +27,7 @@ Selling a travel ticket is a four step process: querying, retailing, creation (f
 
 The website sends a request to the retailer API for journey and fare information. The retailer API finds relevant results and signs them using the private key of its Ethereum account.
 
-![querying](/assets/img/a-step-towards-decentralized-travel-tickets/1.png){: .img-responsive }
+![querying](/assets/img/a-step-towards-decentralized-travel-tickets/1.png){: .img-responsive .blog-image }
 
 The results are displayed on the website. After selecting a result, the user purchases a ticket by executing the contract through the website.
 
