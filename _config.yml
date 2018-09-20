@@ -22,3 +22,7 @@ autoprefixer:
   - last 2 versions
 sass:
   style: compressed
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
