@@ -1,11 +1,11 @@
 ---
 title: traintickets.to
-description: UK rail tickets on the blockchain using an ERC-721 compliant smart contract and digital signing service.
+description: The beta version of our web app puts UK rail tickets on the blockchain using an ERC-721 compliant smart contract. Find out how you can purchase tickets using Ethereum's in-built crypto-currency, Ether
 layout: post
 image: /assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png
 ---
 
-Planar Network's [traintickets.to](https://traintickets.to) web app brings UK rail to the [Ethereum](https://ethereum.org/) blockchain. Users can purchase train tickets using Ethereum's in-built crypto-currency: Ether.                                                                                                                                       
+Planar Network's [traintickets.to](https://traintickets.to) web app brings UK rail to the [Ethereum](https://ethereum.org/) blockchain. Users can purchase train tickets using Ethereum's in-built crypto-currency: Ether. 
 {: .article-headline}
 
 [![traintickets.to](/assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png){: .img-responsive }](https://traintickets.to)

@@ -1,6 +1,6 @@
 ---
-title: Data feeds
-description: Rail, bus and airline industry data converted to GTFS.
+title: Industry data feeds
+description: Planar Network maintain a number of tools to import, convert and manage industry data feeds. Where possible a GTFS feed of the latest bus, rail and plane data is provided.
 layout: post
 image: /assets/img/feeds.png
 ---
