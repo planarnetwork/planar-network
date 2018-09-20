@@ -6,10 +6,11 @@ description: The beta release of traintickets.to gives us the first glimpse of w
 layout: post
 ---
 
+[Traintickets.to](https://traintickets.to/), the first rail ticketing system built on a blockchain, has launched it's public beta. It represents the first step towards [decentralized travel ticketing](https://planar.network/).
+{: .blog-headline}
+
 [![traintickets.to](/assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png){: .img-responsive }](https://traintickets.to)
 *traintickets.to - decentralized UK rail tickets*
-
-[Traintickets.to](https://traintickets.to/), the first rail ticketing system built on a blockchain, has launched it's public beta. It represents the first step towards [decentralized travel ticketing](https://planar.network/), as outlined in an [earlier post](https://ljn.io/posts/blockchain-transport/).
 
 Underpinning traintickets.to is an [Ethereum](https://ethereum.org/) smart contract that retails and stores train tickets for all UK operators. Purchases through traintickets.to are made using Ether, Ethereum's in-built currency.  
 
@@ -23,52 +24,18 @@ The decentralized nature of the blockchain means that any UK rail retailer can s
 
 Selling a travel ticket is a four step process: querying, retailing, creation (fulfilment) and storage. In order to complete these steps traintickets.to uses three components: an Ethereum smart contract, a website and a retailer API.
 
-### 1) Querying
-
-The website sends a request to the retailer API for journey and fare information. The retailer API finds relevant results and signs them using the private key of its Ethereum account.
-
-![querying](/assets/img/a-step-towards-decentralized-travel-tickets/1.png){: .img-responsive .blog-image }
-
-The results are displayed on the website. After selecting a result, the user purchases a ticket by executing the contract through the website.
-
-### 2) Retailing
-
-The website executes the contract using the web3 client library to send the selected result, signature and necessary funds to the contract.
-
-The contract verifies the signature provided by the retailer API to ensure that the retailer offered this ticket at the given price. Assuming the verification was a success, a ticket is created and assigned to the user. The funds are transferred from the user to the retailer instantly and atomically, so there can be no tickets created without paying the retailer.
-
-![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png){: .img-responsive .blog-image }
-
-### 3) Ticket creation
-
-Although the ticket has been created and stored on the blockchain, real world rail systems do not query the blockchain (yet), so the retailer needs to fulfil the ticket.
-
-All tickets purchased get put into the fulfilment queue of the retailer that signed them. The retailer API polls this queue and updates the ticket with the collection reference after it has been fulfilled.
-
-![creation](/assets/img/a-step-towards-decentralized-travel-tickets/3.png){: .img-responsive .blog-image }
-
-The fulfilment information is a string so it is possible to provide other methods of fulfilment.
-
-### 4) Storage
-
-The user can then query the contract for their collection reference through the website or another third party app.
-
-![storage](/assets/img/a-step-towards-decentralized-travel-tickets/4.png){: .img-responsive .blog-image }
-
-The website and retailer API are specific to [traintickets.to](https://traintickets.to/), but the contract is not. Other retailers can integrate their own website and API to sell tickets using the contract, allowing customers to purchase tickets from multiple websites and have all their tickets in a single wallet.
-
-The code for the [contract](https://www.github.com/planarnetwork/ticket-wallet/), [website](https://www.github.com/planarnetwork/traintickets.to/) and [retailer API](https://www.github.com/planarnetwork/uk-rail-provider/) are all open source and available on [GitHub](https://www.github.com/planarnetwork).
+You can read all about each component and the overall process on the [project page](/projects/traintickets.to).
 
 ## The next step
 
 Traintickets.to has achieved decentralization of retailing and storage. The retailer API currently relies on a downstream API to query fares and create tickets.
 
-![e-tickets](/assets/img/a-step-towards-decentralized-travel-tickets/e-ticket.png){: .img-responsive .center-block }
-*UK rail e-ticket*{: .center .center-block}
-
 Decentralizing the fares query process is challenging because of the sheer amount of data. In the UK alone there are over 100 million rail fares when you account for all the stations, ticket types and railcard discounts. It's possible that blockchain [performance improvements](https://medium.com/coinmonks/scaling-solutions-on-ethereum-explained-d970b66e28e5) or [fare simplifications](https://www.bbc.co.uk/news/uk-44032015) will make this more feasible, but both look some way off.
 
-Decentralizing the creation of UK rail tickets is achievable, but it relies on a purely digital ticket standard. The UK has four different digital ticket standards, none of which are widely supported. The most promising is the e-ticket ticket standard which uses an Apple pkpass file with an Aztec barcode. The payload for the pkpass and Aztec barcode could be generated "on-chain" by the contract, which would tie together retailing, creation and storage into a single atomic operation. The problems caused by non-atomic retailing, creation and storage of tickets are are outlined in the [Planar Network whitepaper](https://planar.network/resources/whitepaper.pdf).
+Decentralizing the creation of UK rail tickets is achievable, but it relies on a purely digital ticket standard. The UK has four different digital ticket standards, none of which are widely supported. The most promising is the e-ticket ticket standard which uses an Apple pkpass file with an Aztec barcode. The payload for the pkpass and Aztec barcode could be generated "on-chain" by the contract, which would tie together retailing, creation and storage into a single atomic operation. The problems caused by non-atomic retailing, creation and storage of tickets are are outlined in the [Planar Network whitepaper](/assets/docs/whitepaper.pdf).
+
+![e-tickets](/assets/img/a-step-towards-decentralized-travel-tickets/e-ticket.png){: .img-responsive .center-block }
+*UK rail e-ticket*{: .center .center-block}
 
 The UK government has [provided £80 million](https://www.gov.uk/government/news/government-plans-80-million-smart-ticketing-rail-revolution) to speed up the adoption of electronic tickets making decentralized ticket creation the next logical step.
 
