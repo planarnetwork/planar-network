@@ -8,7 +8,7 @@ layout: post
 
 <div class="pull-right">
 <a href="https://traintickets.to">
-![traintickets.to](/assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png)
+![traintickets.to](/assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png){: .img-responsive }
 </a>
 *traintickets.to - decentralized UK rail tickets*
 </div>
@@ -32,7 +32,7 @@ Selling a travel ticket is a four step process: querying, retailing, creation (f
 The website sends a request to the retailer API for journey and fare information. The retailer API finds relevant results and signs them using the private key of its Ethereum account.
 
 <div markdown="1">
-![querying](/assets/img/a-step-towards-decentralized-travel-tickets/1.png)
+![querying](/assets/img/a-step-towards-decentralized-travel-tickets/1.png){: .img-responsive }
 </div>
 
 The results are displayed on the website. After selecting a result, the user purchases a ticket by executing the contract through the website.
@@ -44,7 +44,7 @@ The website executes the contract using the web3 client library to send the sele
 The contract verifies the signature provided by the retailer API to ensure that the retailer offered this ticket at the given price. Assuming the verification was a success, a ticket is created and assigned to the user. The funds are transferred from the user to the retailer instantly and atomically, so there can be no tickets created without paying the retailer.
 
 <div markdown="1">
-![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png)
+![retailing](/assets/img/a-step-towards-decentralized-travel-tickets/2.png){: .img-responsive }
 </div>
 
 ### 3) Ticket creation
@@ -54,7 +54,7 @@ Although the ticket has been created and stored on the blockchain, real world ra
 All tickets purchased get put into the fulfilment queue of the retailer that signed them. The retailer API polls this queue and updates the ticket with the collection reference after it has been fulfilled.
 
 <div markdown="1">
-![creation](/assets/img/a-step-towards-decentralized-travel-tickets/3.png)
+![creation](/assets/img/a-step-towards-decentralized-travel-tickets/3.png){: .img-responsive }
 </div>
 
 The fulfilment information is a string so it is possible to provide other methods of fulfilment.
@@ -64,7 +64,7 @@ The fulfilment information is a string so it is possible to provide other method
 The user can then query the contract for their collection reference through the website or another third party app.
 
 <div markdown="1">
-![storage](/assets/img/a-step-towards-decentralized-travel-tickets/4.png)
+![storage](/assets/img/a-step-towards-decentralized-travel-tickets/4.png){: .img-responsive }
 </div>
 
 The website and retailer API are specific to [traintickets.to](https://traintickets.to/), but the contract is not. Other retailers can integrate their own website and API to sell tickets using the contract, allowing customers to purchase tickets from multiple websites and have all their tickets in a single wallet.
@@ -75,9 +75,9 @@ The code for the [contract](https://www.github.com/planarnetwork/ticket-wallet/)
 
 Traintickets.to has achieved decentralization of retailing and storage. The retailer API currently relies on a downstream API to query fares and create tickets.
 
-<div markdown="1" style="width: 230px;">
-![e-tickets](/assets/img/a-step-towards-decentralized-travel-tickets/e-ticket.png)
-*UK rail e-ticket*
+<div markdown="1">
+![e-tickets](/assets/img/a-step-towards-decentralized-travel-tickets/e-ticket.png){: .img-responsive .center-block }
+<p class="center"><em>UK rail e-ticket</em></p>
 </div>
 
 Decentralizing the fares query process is challenging because of the sheer amount of data. In the UK alone there are over 100 million rail fares when you account for all the stations, ticket types and railcard discounts. It's possible that blockchain [performance improvements](https://medium.com/coinmonks/scaling-solutions-on-ethereum-explained-d970b66e28e5) or [fare simplifications](https://www.bbc.co.uk/news/uk-44032015) will make this more feasible, but both look some way off.
@@ -94,4 +94,4 @@ You can try out [traintickets.to](https://traintickets.to/) today. It's currentl
 
 [MetaMask](https://www.metamask.io/) is required to complete transactions. If you don't have a Ropsten account or MetaMask you can watch this video of how it works.
 
-<iframe width="560" height="315" src="https://youtube.com/embed/3ARnwIaVtac" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtube.com/embed/3ARnwIaVtac" frameborder="0" allowfullscreen></iframe>{: .center-block }
