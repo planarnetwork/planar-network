@@ -1,0 +1,55 @@
+.project {
+    &-list {
+        text-align: center;
+
+        @media ($screen-tablet) {
+            text-align: left;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+            padding: 30px;
+            background-color: $color-white;
+            box-shadow: 0 3px 25px 5px rgba($color-primary, 0.08);
+
+            @media ($screen-tablet) {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 5px;
+
+            @media ($screen-tablet) {
+                margin-top: 0;
+            }
+        }
+
+        &__short {
+            margin-bottom: 15px;
+
+            @media ($screen-tablet) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__url {
+            color: $color-primary;
+
+            &:hover, &:focus, &:active {
+                color: $color-tertiary;
+                text-decoration: none;
+            }
+        }
+
+        &__image {
+            width: 75%;
+            margin: 0 auto;
+
+            @media ($screen-tablet) {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
