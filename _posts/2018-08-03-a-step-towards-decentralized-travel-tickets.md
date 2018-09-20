@@ -7,7 +7,7 @@ layout: post
 ---
 
 [Traintickets.to](https://traintickets.to/), the first rail ticketing system built on a blockchain, has launched it's public beta. It represents the first step towards [decentralized travel ticketing](https://planar.network/).
-{: .blog-headline}
+{: .article-headline}
 
 [![traintickets.to](/assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png){: .img-responsive }](https://traintickets.to)
 *traintickets.to - decentralized UK rail tickets*
