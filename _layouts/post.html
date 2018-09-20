@@ -42,6 +42,9 @@
                     <div class="row">
                         <div class="col-lg-16 offset-lg-4 col-xl-14 offset-xl-5">
                             <div class="article-detail">
+                                {% if page.date %}
+                                    <i>Date: {{ page.date | date: '%Y-%m-%d' }}</i>
+                                {% endif %}
                                 {{ content }}
                             </div>
                             <div class="article-back">
