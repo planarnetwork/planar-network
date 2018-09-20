@@ -161,15 +161,3 @@
         text-align: left;
     }
 }
-
-.article-detail {
-    a {
-        color: $color-tertiary;
-        @include get-font(Medium);
-
-        &:hover, &:active, &:focus {
-            text-decoration: underline;
-            color: $color-primary;
-        }
-    }
-}

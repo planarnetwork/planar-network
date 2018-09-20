@@ -63,25 +63,41 @@
         }
     }
 
-    &-image {
-        @media ($screen-tablet) {
-            width: 75%;
-            margin: 0 auto;
+    &-detail {
+        a {
+            color: $color-tertiary;
+            @include get-font(Medium);
+
+            &:hover, &:active, &:focus {
+                text-decoration: underline;
+                color: $color-primary;
+            }
         }
-    }
 
-    &-headline {
-        font-size: 20px;
-        @include get-font(Medium);
-        line-height: 34px;
-        padding-left: 20px;
-        margin-bottom: 50px;
+        iframe {
+            max-width: 100%;
+        }
 
-        @media ($screen-laptop) {
-            font-size: 22px;
-            line-height: 37px;
-            padding-left: 30px;
-            border-left: solid 4px $color-font;
+        .article-image {
+            @media ($screen-tablet) {
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+
+        .article-headline {
+            font-size: 20px;
+            @include get-font(Medium);
+            line-height: 34px;
+            padding-left: 20px;
+            margin-bottom: 50px;
+
+            @media ($screen-laptop) {
+                font-size: 22px;
+                line-height: 37px;
+                padding-left: 30px;
+                border-left: solid 4px $color-font;
+            }
         }
     }
 
