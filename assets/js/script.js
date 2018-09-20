@@ -113,16 +113,18 @@ $(document).ready(function() {
 
     $form.on('submit', function(e) {
       e.preventDefault();
-      addLoader();
-      $.ajax({
-        type: "POST",
-        url: $form.attr('action'),
-        data: JSON.stringify({ data: $input.val() }),
-        success: closeForm,
-        error: closeForm,
-        dataType: 'application/json'
-      });
-    })
+      if ($input.val().length > 3 && $input.val().includes("@")) {
+        addLoader();
+        $.ajax({
+          type: "POST",
+          url: $form.attr('action'),
+          data: JSON.stringify({ data: $input.val() }),
+          success: closeForm,
+          error: closeForm,
+          dataType: 'application/json'
+        });
+      }
+    });
 
     runSlick();
 });
