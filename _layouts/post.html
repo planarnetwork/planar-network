@@ -1,3 +1,5 @@
+{% assign sectionLink = section[1] | prepend: '/' %}
+
 <!DOCTYPE html>
 <html lang="{{site.lang}}">
 <head>
@@ -41,7 +43,7 @@
                         <div class="col-lg-16 offset-lg-4 col-xl-14 offset-xl-5">
                             {{ content }}
                             <div class="blog-back">
-                                <a class="btn btn-primary" href="/blog">Back</a>
+                                <a class="btn btn-primary" href="{{ sectionLink }}">Back</a>
                             </div>
                         </div>
                     </div>

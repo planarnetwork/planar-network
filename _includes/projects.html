@@ -1,20 +1,28 @@
 <section class="projects">
   <div class="container">
     <div class="row">
-      <div class="col-lg-16 offset-lg-4 col-xl-14 offset-xl-5">
-        <ul class="blog-list list-unstyled">
+      <div class="col-lg-18 offset-lg-3">
+        <ul class="project-list list-unstyled">
           {% for project in site.projects %}
-            <li class="blog-list__item underline">
-              <article class="article" itemscope="itemscope" itemtype="http://schema.org/Article">
-                <header>
-                  <h2 class="blog-list__title">
-                    <a class="blog-list__url" href="{{project.url}}">{{project.title}}</a>
-                  </h2>
-                </header>
-                <div class="blog-list__short" itemprop="description">
-                  {{ project.description }}
-                </div>
-                <a class="btn btn-primary" href="{{project.url}}">View post</a>
+            <li class="project-list__item">
+              <article class="article clearfix" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <div class="row">
+                    {% if project.image %}
+                      <div class="col-md-8">
+                        <img class="project-list__image img-responsive" src="{{ project.image }}" />
+                      </div>
+                    {% endif %}
+                    <div class="col-md-16 col-lg-15 offset-lg-1">
+                      <header>
+                        <h2 class="project-list__title">
+                          <a class="project-list__url" href="{{project.url}}">{{project.title}}</a>
+                        </h2>
+                      </header>
+                      <div class="project-list__short" itemprop="description">
+                        {{ project.description }}
+                      </div>
+                      <a class="btn btn-primary btn-mini" href="{{project.url}}">View project</a>
+                    </div>
               </article>
             </li>
           {% endfor %}

@@ -7,32 +7,22 @@
         }
 
         &__item {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            padding: 30px;
+            background-color: $color-white;
+            box-shadow: 0 3px 25px 5px rgba($color-primary, 0.08);
 
             @media ($screen-tablet) {
-                margin-bottom: 80px;
-            }
-
-            &:after {
-                content: "";
-                display: block;
-                margin: 40px auto 0 auto;
-                width: 45px;
-                height: 3px;
-                background-color: $color-tertiary;
-
-                @media ($screen-tablet) {
-                    margin: 80px 0 0 0;
-                }
-            }
-
-            &:last-child:after {
-                display: none;
+                margin-bottom: 40px;
             }
         }
 
         &__title {
             margin-bottom: 5px;
+
+            @media ($screen-tablet) {
+                margin-top: 0;
+            }
         }
 
         &__time {

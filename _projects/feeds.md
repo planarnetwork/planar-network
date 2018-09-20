@@ -2,6 +2,7 @@
 title: Data feeds
 description: Rail, bus and airline industry data converted to GTFS.
 layout: post
+image: /assets/img/a-step-towards-decentralized-travel-tickets/traintickets.to.png
 ---
 
 Planar Network maintain a [number of tools](https://www.github.com/planarnetwork) for converting various industry standards to GTFS. Where possible we maintain a public version of the feed itself on [transitfeeds.com](http://transitfeeds.com).
