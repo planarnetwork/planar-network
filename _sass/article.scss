@@ -1,8 +1,8 @@
-.blog {
+.article {
     &-list {
         text-align: center;
 
-        @media ($screen-laptop) {
+        @media ($screen-tablet) {
             text-align: left;
         }
 
@@ -51,5 +51,36 @@
                 text-decoration: none;
             }
         }
+
+        &__image {
+            width: 75%;
+            margin: 0 auto;
+
+            @media ($screen-tablet) {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &-image {
+        @media ($screen-tablet) {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+
+    &-headline {
+        font-size: 20px;
+        @include get-font(Medium);
+        line-height: 37px;
+        border-left: solid 4px $color-font;
+        padding-left: 30px;
+    }
+
+    &-back {
+        margin-top: 60px;
+        padding-top: 60px;
+        border-top: solid 2px $color-tertiary;
     }
 }
