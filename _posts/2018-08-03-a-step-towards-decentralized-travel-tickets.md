@@ -24,6 +24,8 @@ The decentralized nature of the blockchain means that any UK rail retailer can s
 
 Selling a travel ticket is a four step process: querying, retailing, creation (fulfilment) and storage. In order to complete these steps traintickets.to uses three components: an Ethereum smart contract, a website and a retailer API.
 
+You can read all about each component and the overall process on the [project page](/projects/traintickets.to).
+
 ## The next step
 
 Traintickets.to has achieved decentralization of retailing and storage. The retailer API currently relies on a downstream API to query fares and create tickets.
