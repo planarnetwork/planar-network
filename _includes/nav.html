@@ -5,6 +5,9 @@
     </span>
 </button>
 
+{% assign section = page.url | split: '/' %}
+{% assign sectionLink = section[1] | prepend: '/' %}
+
 <nav id="navigation" class="nav float-right js-nav">
     <a class="logo js-nav-link d-lg-none" href="#top" title="Planar Network">
         <span class="sr-only">Planar Network</span>
@@ -12,7 +15,7 @@
     <ul class="nav-list">
         {% for item in site.data.nav %}
             <li class="nav-item">
-                <a href="{{ item.link }}" class="nav-link {% if page.url == item.link %}is-active{% endif %}">
+                <a href="{{ item.link }}" class="nav-link {% if page.url == item.link or sectionLink == item.link %}is-active{% endif %}">
                   {{ item.name }}
                 </a>
             </li>
