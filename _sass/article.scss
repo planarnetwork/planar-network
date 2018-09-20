@@ -74,14 +74,14 @@
         font-size: 20px;
         @include get-font(Medium);
         line-height: 34px;
-        border-left: solid 4px $color-font;
         padding-left: 20px;
         margin-bottom: 50px;
 
-        @media ($screen-tablet) {
+        @media ($screen-laptop) {
             font-size: 22px;
             line-height: 37px;
             padding-left: 30px;
+            border-left: solid 4px $color-font;
         }
     }
 

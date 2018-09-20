@@ -152,12 +152,24 @@
     }
 }
 
-.blog, .projects {
+.articles {
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
 
     @media ($screen-laptop) {
         text-align: left;
-    }  
+    }
+}
+
+.article-detail {
+    a {
+        color: $color-tertiary;
+        @include get-font(Medium);
+
+        &:hover, &:active, &:focus {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
 }
