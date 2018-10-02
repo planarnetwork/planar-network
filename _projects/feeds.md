@@ -16,7 +16,23 @@ Download the latest GTFS feed: [gb-rail-latest.zip](https://s3.eu-west-2.amazona
 
 ## Bus
 
-Coming soon.
+Data is supplied and licensed by [Traveline](http://www.travelinedata.org.uk/traveline-open-data/traveline-national-dataset/).
+
+There are several data sets available: 
+
+- All GB bus services - [gb-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/gb-bus-latest.zip)
+- East Anglia bus services [ea-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ea-bus-latest.zip)
+- East Midlands bus services [em-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/em-bus-latest.zip)
+- London bus services [l-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/l-bus-latest.zip)
+- National coach services [ncsd-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ncsd-bus-latest.zip)
+- North east bus services [ne-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ne-bus-latest.zip)
+- North west bus services [nw-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/nw-bus-latest.zip)
+- Southern bus services [s-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/s-bus-latest.zip)
+- South east bus services [se-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/se-bus-latest.zip)
+- South west bus services [sw-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/sw-bus-latest.zip)
+- Western bus services [w-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/w-bus-latest.zip)
+- West midlands bus services [wm-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/wm-bus-latest.zip)
+- Yorkshire bus services [y-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/y-bus-latest.zip)
 
 ## Flights
 
