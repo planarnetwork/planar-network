@@ -1,5 +1,5 @@
 ---
-title: Public transit GTFS feeds
+title: traintickets.to in the news 
 date: 2018-10-09 06:00
 lastmod: 2019-10-09 06:00
 description: >- 
