@@ -14,11 +14,17 @@ Data is supplied and licensed by [Rail Delivery Group](https://www.raildeliveryg
 
 Download the latest GTFS feed: [gb-rail-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/gb-rail-latest.zip)
 
+## Eurostar
+
+Data is converted from the Eurostar [PDF timetable](https://content-static.eurostar.com/documents/446099_Timetables%20Core%20destination_Issue%2082_UK%20EN_0.pdf).
+
+- Eurostar - [eurostar.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/eurostar.zip)
+
 ## Bus
 
 Data is supplied and licensed by [Traveline](http://www.travelinedata.org.uk/traveline-open-data/traveline-national-dataset/).
 
-There are several data sets available: 
+There are several data sets available:
 
 - All GB bus services - [gb-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/gb-bus-latest.zip)
 - East Anglia bus services [ea-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ea-bus-latest.zip)
