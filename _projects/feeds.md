@@ -50,5 +50,7 @@ All tools are open source (licensed under GPLv3) and are available on [github](h
 
 - [dtd2mysql](https://www.github.com/planarnetwork/dtd2mysql) - converts UK rail [CIF](https://www.raildeliverygroup.com/files/Publications/services/rsp/RSPS5046-01-00_Timetable_Information_Data_Feed_InterfaceSpecification.pdf) format to GTFS
 - [transxchange2gtfs](https://www.github.com/planarnetwork/transxchange2gtfs) - converts UK bus data ([TransXChange](https://www.gov.uk/government/collections/transxchange)) to GTFS
+- [eurostar2gtfs](https://www.github.com/planarnetwork/eurostar2gtfs) - converts Eurostar data to GTFS
+- [gtfsmerge](https://www.github.com/planarnetwork/gtfsmerge) - merges multiple GTFS data sets
 - [ssim2gtfs](https://www.github.com/planarnetwork/ssim2gtfs) - converts [IATA SSIM](https://www.iata.org/publications/store/Pages/standard-schedules-information.aspx) format to GTFS
 - [cuf2gtfs](https://www.github.com/planarnetwork/cuf2gtfs) - converts TfL London Underground schedules ([CUF](http://content.tfl.gov.uk/cuf-technical-spec-tube-timetable-data.pdf)) to GTFS
