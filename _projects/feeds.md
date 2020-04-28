@@ -33,7 +33,7 @@ There are several data sets available:
 - National coach services [ncsd-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ncsd-bus-latest.zip)
 - North east bus services [ne-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/ne-bus-latest.zip)
 - North west bus services [nw-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/nw-bus-latest.zip)
-- Southern bus services [s-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/s-bus-latest.zip)
+- Scottish bus services [s-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/s-bus-latest.zip)
 - South east bus services [se-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/se-bus-latest.zip)
 - South west bus services [sw-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/sw-bus-latest.zip)
 - Western bus services [w-bus-latest.zip](https://s3.eu-west-2.amazonaws.com/feeds.planar.network/w-bus-latest.zip)
